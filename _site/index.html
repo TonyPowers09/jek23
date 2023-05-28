@@ -10,21 +10,23 @@
         color: #93ffdf;
         font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
       }
-
       h2 {
-        width: 25%; /* Set the width to 40% of the page */
-        margin: 0 auto; /* Center the header horizontally */
+        width: 25%;
+        margin: 0 auto;
         text-align: center;
         background-image: url('https://pdfz.s3.us-west-1.amazonaws.com/sky.png');
         background-size: contain auto;
         padding: 27px;
-        color: White;
         font-size: 40px;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
         border-radius: 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         margin-top: 50px;
-      }
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-image: linear-gradient(to right, #ff893c, #488beb, #dc3069, #7e439b, #f8a981, #adfc2d, #678ba7, #76ddb5, #0a86bc);
+    }
 
       ul {
         list-style-type: none;
