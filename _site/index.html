@@ -9,6 +9,10 @@
         background-color: #f2f2f2;
         margin: 0;
         padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
       }
 
       h1 {
@@ -21,6 +25,9 @@
         list-style-type: none;
         padding: 0;
         margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
       li {
@@ -28,9 +35,25 @@
       }
 
       a {
-        color: #007bff;
         text-decoration: none;
+        display: inline-block;
+        padding: 5px 10px;
+        color: white;
+        border-radius: 5px;
       }
+
+      /* Rainbow colors */
+      li:nth-child(1) a { background-color: #e6194B; } /* Red */
+      li:nth-child(2) a { background-color: #f58231; } /* Orange */
+      li:nth-child(3) a { background-color: #ffe119; } /* Yellow */
+      li:nth-child(4) a { background-color: #bfef45; } /* Lime */
+      li:nth-child(5) a { background-color: #3cb44b; } /* Green */
+      li:nth-child(6) a { background-color: #42d4f4; } /* Cyan */
+      li:nth-child(7) a { background-color: #4363d8; } /* Blue */
+      li:nth-child(8) a { background-color: #911eb4; } /* Purple */
+      li:nth-child(9) a { background-color: #f032e6; } /* Magenta */
+      li:nth-child(10) a { background-color: #a9a9a9; } /* Gray */
+      /* Add more colors for the remaining links */
 
       a:hover {
         text-decoration: underline;
@@ -76,4 +99,3 @@
     </ul>
   </body>
 </html>
-
