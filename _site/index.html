@@ -17,18 +17,35 @@
         width: 25%;
         margin: 0 auto;
         text-align: center;
-        background-image: url('https://pdfz.s3.us-west-1.amazonaws.com/sky.png');
-        background-size: contain auto;
         padding: 27px;
         font-size: 40px;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
         border-radius: 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         margin-top: 50px;
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        background-image: linear-gradient(to right, #ff893c, #488beb, #dc3069, #7e439b, #f8a981, #adfc2d, #678ba7, #76ddb5, #0a86bc);
+        background-image: url('https://pdfz.s3.us-west-1.amazonaws.com/sky.png');
+        background-size: cover;
+        background-blend-mode: screen;
+        color: #fff;
+        animation: psychedelic 10s infinite;
+      }
+
+      @keyframes psychedelic {
+        0% {
+          background-color: #ff893c;
+        }
+        25% {
+          background-color: #488beb;
+        }
+        50% {
+          background-color: #dc3069;
+        }
+        75% {
+          background-color: #7e439b;
+        }
+        100% {
+          background-color: #f8a981;
+        }
       }
 
       ul {
