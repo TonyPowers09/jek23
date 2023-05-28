@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>books</title>
+    <style>
+      body {
+        background-color: #3b003b;
+        background-image: radial-gradient(circle, #7a006e, #3b003b);
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+      }
+
+      h3 {
+        text-align: center;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+
+      li {
+        margin: 9px 0;
+      }
+
+      a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+
+      /* Rainbow colors */
+      li:nth-child(1) a { background-color: #e6194B; } /* Red */
+      /* Add more colors for the remaining links */
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center;">Books 4 Linde</h2>
+    <ul>
+      <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/the-sacred-mushroom-and-the-cross-allegro-john.pdf">Sacred Mushroom and the Cross</a></li>
+    </ul>
+  </body>
+</html>
