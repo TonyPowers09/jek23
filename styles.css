@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-  background-image: url('mushroom.png');
+  background-image: url('https://pdfz.s3.us-west-1.amazonaws.com/mushroom.png');
   background-repeat: no-repeat;
   background-size: contain;
   text-indent: -9999px;
