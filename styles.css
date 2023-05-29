@@ -16,46 +16,40 @@ body {
   padding: 20px;
 }
 
-h1.dance {
-  position: relative;
-  text-align: center;
-  background: linear-gradient(45deg, #FF6347, #FF4500, #FF6347);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 48px;
-}
-
-h2.subtitle {
+h1 {
   text-align: center;
   font-size: 24px;
-  margin-bottom: 40px;
+  color: #FFFFFF;
+  animation: color-cycle 17s infinite;
 }
 
 @keyframes color-cycle {
   0% {
-    color: red;
+    color: #FF0000;
   }
-  14.29% {
-    color: orange;
+  12.5% {
+    color: #FF4500;
   }
-  28.57% {
-    color: yellow;
+  25% {
+    color: #FFA500;
   }
-  42.86% {
-    color: green;
+  37.5% {
+    color: #FFFF00;
   }
-  57.14% {
-    color: blue;
+  50% {
+    color: #00FF00;
   }
-  71.43% {
-    color: indigo;
+  62.5% {
+    color: #00FFFF;
   }
-  85.71% {
-    color: violet;
+  75% {
+    color: #0000FF;
+  }
+  87.5% {
+    color: #8A2BE2;
   }
   100% {
-    color: red;
+    color: #EE82EE;
   }
 }
 
