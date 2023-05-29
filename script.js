@@ -7,4 +7,9 @@ const changeColor = () => {
   currentIndex = (currentIndex + 1) % colors.length;
 };
 
+const handleClick = () => {
+  window.location.href = 'https://pdfz.s3.us-west-1.amazonaws.com/giphy.gif';
+};
+
+title.addEventListener('click', handleClick);
 setInterval(changeColor, 1000);
