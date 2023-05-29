@@ -23,32 +23,15 @@ h1.dance {
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: color-cycle 17s infinite;
 }
 
 @keyframes color-cycle {
   0% {
-    color: red;
-  }
-  14.29% {
-    color: orange;
-  }
-  28.57% {
-    color: yellow;
-  }
-  42.86% {
-    color: green;
-  }
-  57.14% {
-    color: blue;
-  }
-  71.43% {
-    color: indigo;
-  }
-  85.71% {
-    color: violet;
+    filter: hue-rotate(0deg);
   }
   100% {
-    color: red;
+    filter: hue-rotate(360deg);
   }
 }
 
