@@ -80,6 +80,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 a::before {
@@ -92,6 +93,7 @@ a::before {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   transition: opacity 0.3s;
+  z-index: -1;
 }
 
 a:hover {
