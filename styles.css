@@ -1,80 +1,32 @@
-/* styles.css */
-
 body {
-  background-image: url('https://pdfz.s3.us-west-1.amazonaws.com/treasureshroom.webp');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   font-family: Arial, sans-serif;
-  text-align: center;
 }
 
 h1 {
-  width: 19%;
+  background-image: url('mushroom.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-indent: -9999px;
+  width: 250px;
+  height: 250px;
   margin: 0 auto;
-  text-align: center;
-  padding: 27px;
-  font-size: 40px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin-top: 50px;
-  background-image: url('https://pdfz.s3.us-west-1.amazonaws.com/sky.png');
-  background-size: cover;
-  background-blend-mode: screen;
-  color: #fff;
-  animation: psychedelic 12s infinite;
-}
-
-@keyframes psychedelic {
-    0% {
-      background-color: #ff893c;
-    }
-    25% {
-      background-color: #488beb;
-    }
-    50% {
-      background-color: #dc3069;
-    }
-    65% {
-      background-color: #7e439b;
-    }
-    85% {
-      background-color: #f8a981;
-    }
-    100% {
-      background-color: #a4df66;
-    }
 }
 
 ul {
   list-style-type: none;
   padding: 0;
-  margin: 20px auto;
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 li {
-  width: 50%;
+  margin-bottom: 10px;
 }
 
-li:nth-child(n) a {
-  background-color: hsl(calc(2 * (n - 1)), 100%, 60%);
-  display: block;
+a {
   text-decoration: none;
-  color: #ffd700;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
+  color: #333;
 }
 
-li:nth-child(n) a:hover {
-  background-color: #000000;
+a:hover {
+  text-decoration: underline;
 }
 
