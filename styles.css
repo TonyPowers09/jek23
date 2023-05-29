@@ -5,11 +5,12 @@ body {
 h1 {
   background-image: url('https://pdfz.s3.us-west-1.amazonaws.com/mushroom.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   text-indent: -9999px;
   width: 250px;
   height: 250px;
   margin: 0 auto;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
 ul {
@@ -29,4 +30,3 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
