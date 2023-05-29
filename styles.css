@@ -129,3 +129,29 @@ a:hover::before {
     opacity: 0.8;
   }
 }
+
+h1.dance {
+  position: relative;
+  text-align: center;
+  font-size: 32px;
+  background: linear-gradient(45deg, #FF6347, #FF4500, #FFA500, #FFFF00, #00FF00, #00FFFF, #0000FF, #8A2BE2, #EE82EE);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1.dance:hover {
+  animation: dance-animation 1s ease-in-out infinite;
+}
+
+@keyframes dance-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
