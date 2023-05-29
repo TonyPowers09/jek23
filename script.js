@@ -9,7 +9,7 @@ const changeColor = () => {
 
 const handleClick = (event) => {
   event.preventDefault();
-  window.open('https://pdfz.s3.us-west-1.amazonaws.com/giphy.gif', '_blank');
+  window.open('https://giphy.com/clips/bestfriends-cat-cats-kitty-IsDjNQPc4weWPEwhWm', '_blank');
 };
 
 title.addEventListener('click', handleClick);
