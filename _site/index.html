@@ -6,11 +6,17 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <h1>
-    <span class="h1-left"></span>
-    Peekaboo Pheakdey
-    <span class="h1-right"></span>
-  </h1>
+  <h1>Peekaboo Pheakdey</h1>
+
+  <script>
+    document.querySelector("h1").addEventListener("mouseover", function() {
+      this.classList.add("dance");
+    });
+
+    document.querySelector("h1").addEventListener("mouseout", function() {
+      this.classList.remove("dance");
+    });
+  </script>
 
    <ul>
      <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/gjonslideshow1.mp4" target="_blank">Kitty Slideshow</a></li>

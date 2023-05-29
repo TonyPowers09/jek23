@@ -1,77 +1,29 @@
 body {
   font-family: Arial, sans-serif;
-  background-image: url('https://pdfz.s3.us-west-1.amazonaws.com/treasureshroom.webp');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  text-align: center;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   position: relative;
-  display: inline-block;
-  padding: 10px;
-  font-size: 40px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-  margin: 0;
-  z-index: 2;
+  text-align: center;
+  font-size: 50px;
+  color: #ff00ff;
 }
 
-.h1-left {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background-image: url('https://pdfz.s3.us-west-1.amazonaws.com/mushroom.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  transition: background-color 0.3s ease;
-  z-index: 1;
+.dance {
+  animation: dance-animation 1s infinite;
 }
 
-.h1-right {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  background-image: url('https://pdfz.s3.us-west-1.amazonaws.com/mushroom.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  transition: background-color 0.3s ease;
-  z-index: 1;
-}
-
-.h1-left:hover {
-  background-color: red;
-}
-
-.h1-right:hover {
-  background-color: green;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-li {
-  width: 50%;
-}
-
-a {
-  text-decoration: none;
-  color: #333;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #00ff00;
-  background-color: rgba(0, 0, 0, 0.5);
+@keyframes dance-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
