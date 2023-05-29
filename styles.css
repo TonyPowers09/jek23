@@ -66,11 +66,11 @@ h1::after {
   transition: background-color 0.3s ease;
 }
 
-h1::before:hover {
+h1:hover::before {
   background-color: rgba(255, 0, 0, 0.4);
 }
 
-h1::after:hover {
+h1:hover::after {
   background-color: rgba(0, 255, 0, 0.4);
 }
 
@@ -111,3 +111,4 @@ a:hover::before {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
+
