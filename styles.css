@@ -2,11 +2,11 @@ body {
   font-family: Arial, sans-serif;
   background-image: url('https://pdfz.s3.us-west-1.amazonaws.com/treasureshroom.webp');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-attachment: fixed;
+  background-size: cover;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 .container {
