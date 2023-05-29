@@ -20,37 +20,6 @@ h1 {
   text-align: center;
   font-size: 24px;
   color: #FFFFFF;
-  animation: color-cycle 9s infinite;
-}
-
-@keyframes color-cycle {
-  0% {
-    color: #FF0000;
-  }
-  12.5% {
-    color: #FF4500;
-  }
-  25% {
-    color: #FFA500;
-  }
-  37.5% {
-    color: #FFFF00;
-  }
-  50% {
-    color: #00FF00;
-  }
-  62.5% {
-    color: #00FFFF;
-  }
-  75% {
-    color: #0000FF;
-  }
-  87.5% {
-    color: #8A2BE2;
-  }
-  100% {
-    color: #EE82EE;
-  }
 }
 
 h1.dance {
