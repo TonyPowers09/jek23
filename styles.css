@@ -1,6 +1,8 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
+  background-image: url('https://pdfz.s3.us-west-1.amazonaws.com/mushroom.png');
+  background-repeat: repeat;
+  background-position: center;
   margin: 0;
   padding: 0;
 }
@@ -10,6 +12,7 @@ h1 {
   text-align: center;
   font-size: 50px;
   color: #ff00ff;
+  z-index: 1;
 }
 
 .dance {
@@ -32,6 +35,8 @@ ul {
   list-style-type: none;
   padding: 0;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 li {
