@@ -1,14 +1,17 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const title = document.getElementById('title');
-  const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-  let currentIndex = 0;
+// Function to change the title on mouseover
+function changeTitle() {
+  var title = document.getElementById("title");
+  title.innerHTML = "Welcome to books4pheakdey!";
+}
 
-  function changeColor() {
-    title.style.color = colors[currentIndex];
-    currentIndex = (currentIndex + 1) % colors.length;
-  }
+// Function to change the title back on mouseout
+function resetTitle() {
+  var title = document.getElementById("title");
+  title.innerHTML = "Hello Pheakdey!";
+}
 
-  setInterval(changeColor, 1000);
-  setInterval(changeColor, 17000);
-});
+// Add event listeners to the title element
+var title = document.getElementById("title");
+title.addEventListener("mouseover", changeTitle);
+title.addEventListener("mouseout", resetTitle);
 
