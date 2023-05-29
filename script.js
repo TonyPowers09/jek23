@@ -1,17 +1,6 @@
-// Function to change the title on mouseover
-function changeTitle() {
-  var title = document.getElementById("title");
-  title.innerHTML = "Welcome to books4pheakdey!";
-}
+const title = document.getElementById('title');
 
-// Function to change the title back on mouseout
-function resetTitle() {
-  var title = document.getElementById("title");
-  title.innerHTML = "Hello Pheakdey!";
-}
-
-// Add event listeners to the title element
-var title = document.getElementById("title");
-title.addEventListener("mouseover", changeTitle);
-title.addEventListener("mouseout", resetTitle);
-
+setInterval(() => {
+  const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  title.style.color = randomColor;
+}, 1000);

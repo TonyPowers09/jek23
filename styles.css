@@ -23,25 +23,39 @@ h1.dance {
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: dance-animation 3s infinite;
+  font-size: 48px;
 }
 
 h2.subtitle {
   text-align: center;
   font-size: 24px;
-  color: white;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
-@keyframes dance-animation {
+@keyframes color-cycle {
   0% {
-    transform: rotate(0deg);
+    color: red;
   }
-  50% {
-    transform: rotate(10deg);
+  14.29% {
+    color: orange;
+  }
+  28.57% {
+    color: yellow;
+  }
+  42.86% {
+    color: green;
+  }
+  57.14% {
+    color: blue;
+  }
+  71.43% {
+    color: indigo;
+  }
+  85.71% {
+    color: violet;
   }
   100% {
-    transform: rotate(0deg);
+    color: red;
   }
 }
 
@@ -72,7 +86,7 @@ a {
   text-decoration: none;
   color: white;
   font-size: 20px;
-  transition: color 0.3s, transform 0.3s;
+  transition: color 0.3s;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -94,7 +108,6 @@ a::before {
 a:hover {
   color: limegreen;
   background-color: black;
-  transform: scale(1.1);
 }
 
 a:hover::before {
@@ -102,33 +115,23 @@ a:hover::before {
   animation: smoke-animation 1s infinite;
 }
 
-@keyframes smoke-animation {
+@keyframes dance-animation {
   0% {
-    opacity: 0;
+    transform: rotate(0deg);
   }
   50% {
-    opacity: 1;
+    transform: rotate(10deg);
   }
   100% {
-    opacity: 0;
+    transform: rotate(0deg);
   }
 }
 
-@media screen and (max-width: 600px) {
-  .container {
-    padding: 10px;
+@keyframes smoke-animation {
+  0% {
+    opacity: 0.2;
   }
-
-  h1.dance {
-    font-size: 28px;
-  }
-
-  h2.subtitle {
-    font-size: 20px;
-  }
-
-  li {
-    width: 100%;
+  100% {
+    opacity: 0.8;
   }
 }
-
