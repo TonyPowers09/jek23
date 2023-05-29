@@ -39,6 +39,21 @@ h1::before {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  background-image: url('https://pdfz.s3.us-west-1.amazonaws.com/mushroom.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.4;
+  z-index: -1;
+  width: 50%;
+  transform: translateX(-100%);
+  transition: background-color 0.3s ease;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
   right: 0;
   bottom: 0;
   background-image: url('https://pdfz.s3.us-west-1.amazonaws.com/mushroom.png');
@@ -46,6 +61,17 @@ h1::before {
   background-size: contain;
   opacity: 0.4;
   z-index: -1;
+  width: 50%;
+  transform: translateX(100%);
+  transition: background-color 0.3s ease;
+}
+
+h1::before:hover {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+h1::after:hover {
+  background-color: rgba(0, 255, 0, 0.4);
 }
 
 ul {
@@ -85,4 +111,3 @@ a:hover::before {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
-
