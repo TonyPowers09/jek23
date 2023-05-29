@@ -20,7 +20,7 @@ h1 {
   text-align: center;
   font-size: 24px;
   color: #FFFFFF;
-  animation: color-cycle 1s infinite;
+  animation: color-cycle 0.2s infinite;
 }
 
 @keyframes color-cycle {
