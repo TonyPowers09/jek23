@@ -7,24 +7,33 @@ body {
 }
 
 h1 {
-  position: relative;
-  display: inline-block;
-  padding: 17px;
-  font-size: 40px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  background-image: url('https://pdfz.s3.us-west-1.amazonaws.com/mushroom.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
   z-index: 1;
-  transition: background-size 0.3s ease;
-  text-align: center;
-  margin-bottom: 20px;
+  animation: psychedelic 5s infinite;
 }
 
-h1:hover {
-  background-size: cover;
+@keyframes psychedelic {
+  0% {
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.4);
+  }
+  25% {
+    text-shadow: 2px 2px 4px rgba(0, 255, 0, 0.4);
+  }
+  50% {
+    text-shadow: 2px 2px 4px rgba(0, 0, 255, 0.4);
+  }
+  75% {
+    text-shadow: 2px 2px 4px rgba(255, 255, 0, 0.4);
+  }
+  100% {
+    text-shadow: 2px 2px 4px rgba(255, 0, 255, 0.4);
+  }
 }
 
 ul {
@@ -64,3 +73,4 @@ a:hover::before {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
+
