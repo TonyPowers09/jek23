@@ -30,7 +30,7 @@ h1.dance {
   background: linear-gradient(45deg, #FF6347, #FF4500, #FFA500, #FFFF00, #00FF00, #00FFFF, #0000FF, #8A2BE2, #EE82EE);
   background-size: 200% 200%;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: #FFFFFF; /* Updated: Set solid text color */
 }
 
 h1.dance:hover {
