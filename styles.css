@@ -15,18 +15,28 @@ h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   background-image: url('https://pdfz.s3.us-west-1.amazonaws.com/mushroom.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   z-index: 1;
+  transition: background-size 0.3s ease;
+}
+
+h1:hover {
+  background-size: cover;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 20px;
 }
 
 li {
   margin-bottom: 10px;
+  width: 45%;
 }
 
 a {
@@ -37,4 +47,3 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
