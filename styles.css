@@ -34,9 +34,8 @@ h1.dance {
 
 h1.dance:hover {
   animation: dance-animation 1s ease-in-out infinite;
-  background: linear-gradient(45deg, #FF6347, #FF4500, #FFA500, #FFFF00, #00FF00, #00FFFF, #0000FF, #8A2BE2, #EE82EE);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: #FFFFFF;
 }
 
 @keyframes dance-animation {
