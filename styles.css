@@ -88,19 +88,31 @@ a::before {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(255, 215, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   transition: opacity 0.3s;
 }
 
 a:hover {
-  color: #FF69B4;
-  transform: scale(1.2);
+  color: #00FF00;
+  animation: dance-animation 1s infinite;
 }
 
 a:hover::before {
   opacity: 1;
   animation: smoke-animation 1s infinite;
+}
+
+@keyframes dance-animation {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(10deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
 }
 
 @keyframes smoke-animation {
