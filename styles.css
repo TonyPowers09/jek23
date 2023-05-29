@@ -34,6 +34,8 @@ h1.dance {
 
 h1.dance:hover {
   animation: dance-animation 1s ease-in-out infinite;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: white;
 }
 
 @keyframes dance-animation {
