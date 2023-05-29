@@ -23,7 +23,6 @@ h1.dance {
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: color-cycle 17s infinite;
 }
 
 @keyframes color-cycle {

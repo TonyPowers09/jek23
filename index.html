@@ -1,3 +1,11 @@
+Apologies for the confusion. It seems I misunderstood your requirements. To achieve the effect of the title changing colors every second and cycling through the colors of the spectrum every 17 seconds, we need to modify the CSS animation and introduce JavaScript to handle the color cycling timing.
+
+Here's an updated version of your code that includes the necessary changes:
+
+HTML:
+
+html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +14,7 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="dance">Hello Pheakdey!</h1>
+    <h1 class="dance" id="title">Hello Pheakdey!</h1>
     <ul class="links">
       <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/gjonslideshow1.mp4" target="_blank">Kitty Slideshow</a></li>
       <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/the-sacred-mushroom-and-the-cross-allegro-john.pdf" target="_blank">Sacred Mushroom and the Cross</a></li>
@@ -25,5 +33,7 @@
       <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/on-the-nature-of-things-lucretius.pdf" target="_blank">On the Nature of Things</a></li>
     </ul>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
