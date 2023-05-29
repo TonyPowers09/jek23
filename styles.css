@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-image: url('https://pdfz.s3.us-west-1.amazonaws.com/treasureshroom.webp');
+  background-image: url('path/to/mushroom.png');
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -12,24 +12,31 @@ h1 {
   position: relative;
   text-align: center;
   font-size: 50px;
-  color: #ff00ff;
+  color: #40E0D0;
   z-index: 1;
   filter: blur(0);
   animation: dance-animation 5s infinite;
+  background: linear-gradient(45deg, #FF6347, #FF4500, #FF6347);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes dance-animation {
   0% {
     transform: rotate(0deg);
     filter: blur(0);
+    background-position: 0% 50%;
   }
   50% {
     transform: rotate(10deg);
     filter: blur(5px);
+    background-position: 100% 50%;
   }
   100% {
     transform: rotate(0deg);
     filter: blur(0);
+    background-position: 0% 50%;
   }
 }
 
