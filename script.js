@@ -13,3 +13,4 @@ const handleClick = () => {
 
 title.addEventListener('click', handleClick);
 setInterval(changeColor, 1000);
+
