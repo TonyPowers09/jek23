@@ -1,26 +1,144 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <link rel="stylesheet" href="styles.css">
+  <title>My Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://pdfz.s3.us-west-1.amazonaws.com/treasureshroom.webp');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    h1 {
+      position: relative;
+      font-size: 50px;
+      color: #fff;
+      text-align: center;
+      margin-top: 200px;
+      z-index: 1;
+      animation: psychedelic 5s infinite;
+    }
+
+    @keyframes psychedelic {
+      0% {
+        text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.4);
+      }
+      25% {
+        text-shadow: 2px 2px 4px rgba(0, 255, 0, 0.4);
+      }
+      50% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 255, 0.4);
+      }
+      75% {
+        text-shadow: 2px 2px 4px rgba(255, 255, 0, 0.4);
+      }
+      100% {
+        text-shadow: 2px 2px 4px rgba(255, 0, 255, 0.4);
+      }
+    }
+
+    .mushroom-container {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mushroom-left,
+    .mushroom-right {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      background-image: url('https://pdfz.s3.us-west-1.amazonaws.com/mushroom.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: 0.4;
+      transition: transform 0.3s ease;
+    }
+
+    .mushroom-left {
+      left: -100px;
+    }
+
+    .mushroom-right {
+      right: -100px;
+    }
+
+    .mushroom-container:hover .mushroom-left {
+      transform: rotate(-10deg) scale(1.1);
+    }
+
+    .mushroom-container:hover .mushroom-right {
+      transform: rotate(10deg) scale(1.1);
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      width: 45%;
+    }
+
+    a {
+      text-decoration: none;
+      color: #ffd700;
+      transition: color 0.3s ease;
+      display: block;
+      position: relative;
+      padding: 10px;
+    }
+
+    a:hover {
+      color: #00ff00;
+    }
+
+    a:hover::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+  </style>
 </head>
+
 <body>
-  <h1 onclick="window.open('https://pdfz.s3.us-west-1.amazonaws.com/giphy.gif', '_blank')">Peekaboo Pheakdey</h1>
-  <ul>
-    <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/gjonslideshow1.mp4" target="_blank">Kitty Slideshow</a></li>
-    <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/the-sacred-mushroom-and-the-cross-allegro-john.pdf" target="_blank">Sacred Mushroom and the Cross</a></li>
-    <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/the-psilocybin-producers-guide.pdf" target="_blank">Psilocybin Producers Guide</a></li>
-    <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/The+Iranian+Metaphysicals_+Explorations+in+-+Alireza+Doostdar.pdf" target="_blank">Iranian Metaphysical Explorations</a></li>
-    <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/the-art-of-happiness-in-a-troubled-world-lama-dalai.pdf" target="_blank">Art of Happiness</a></li>
-    <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/terence_mckenna_-_the_invisible_landscape.pdf" target="_blank">Invisible Landscape</a></li>
-    <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/signs-symbols-omens.pdf" target="_blank">Signs Symbols and Omens</a></li>
-    <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/secret-magick-spells-of-the-romany-gypsies.pdf" target="_blank">Magick Spells of the Romany Gypsies</a></li>
-    <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/secret-drugs-of-buddhism-psychedelic-mike-crowley.pdf" target="_blank">Drugs of Buddhism</a></li>
-    <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/tree-of-evil.pdf" target="_blank">Tree of Evil</a></li>
-    <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/saxon-sorcery-and-magik.pdf" target="_blank">Saxon Sorcery and Magick</a></li>
-    <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/sacred-mushroom-of-visions-metzner-ralph.pdf" target="_blank">Sacred Mushroom of Visions</a></li>
-    <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/sacred-journey-of-the-peaceful-warrior-dan-millman.pdf" target="_blank">Sacred Journey of the Peaceful Warrior</a></li>
-    <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/psychic-self-defense.pdf" target="_blank">Psychic Self Defense</a></li>
-    <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/on-the-nature-of-things-lucretius.pdf" target="_blank">On the Nature of Things</a></li>
-  </ul>
+  <div class="mushroom-container">
+    <div class="mushroom-left"></div>
+    <h1>Peekaboo Pheakdey</h1>
+    <div class="mushroom-right"></div>
+  </div>
+
+   <ul>
+     <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/gjonslideshow1.mp4" target="_blank">Kitty Slideshow</a></li>
+     <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/the-sacred-mushroom-and-the-cross-allegro-john.pdf" target="_blank">Sacred Mushroom and the Cross</a></li>
+     <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/the-psilocybin-producers-guide.pdf" target="_blank">Psilocybin Producers Guide</a></li>
+     <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/The+Iranian+Metaphysicals_+Explorations+in+-+Alireza+Doostdar.pdf" target="_blank">Iranian Metaphysical Explorations</a></li>
+     <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/the-art-of-happiness-in-a-troubled-world-lama-dalai.pdf" target="_blank">Art of Happiness</a></li>
+     <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/terence_mckenna_-_the_invisible_landscape.pdf" target="_blank">Invisible Landscape</a></li>
+     <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/signs-symbols-omens.pdf" target="_blank">Signs Symbols and Omens</a></li>
+     <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/secret-magick-spells-of-the-romany-gypsies.pdf" target="_blank">Magick Spells of the Romany Gypsies</a></li>
+     <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/secret-drugs-of-buddhism-psychedelic-mike-crowley.pdf" target="_blank">Drugs of Buddhism</a></li>
+     <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/tree-of-evil.pdf" target="_blank">Tree of Evil</a></li>
+     <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/saxon-sorcery-and-magik.pdf" target="_blank">Saxon Sorcery and Magick</a></li>
+     <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/sacred-mushroom-of-visions-metzner-ralph.pdf" target="_blank">Sacred Mushroom of Visions</a></li>
+     <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/sacred-journey-of-the-peaceful-warrior-dan-millman.pdf" target="_blank">Sacred Journey of the Peaceful Warrior</a></li>
+     <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/psychic-self-defense.pdf" target="_blank">Psychic Self Defense</a></li>
+     <li><a href="https://pdfz.s3.us-west-1.amazonaws.com/on-the-nature-of-things-lucretius.pdf" target="_blank">On the Nature of Things</a></li>
+   </ul>
 </body>
 </html>
