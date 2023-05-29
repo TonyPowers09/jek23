@@ -95,8 +95,8 @@ a::before {
 }
 
 a:hover {
-  color: #00FF00;
-  animation: dance-animation 1s infinite;
+  color: limegreen;
+  background-color: black;
 }
 
 a:hover::before {
