@@ -60,3 +60,12 @@ body {
   color: orange;
 }
 
+ul li a {
+  color: limegreen;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+ul li a:hover {
+  color: orange;
+}
