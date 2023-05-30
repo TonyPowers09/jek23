@@ -9,7 +9,7 @@ const changeColor = () => {
 
 const handleClick = (event) => {
   event.preventDefault();
-  window.open('https://pdfz.s3.us-west-1.amazonaws.com/cat-hat.gif', '_blank');
+  window.open('https://pdfz.s3.us-west-1.amazonaws.com/meany.gif', '_blank');
 };
 
 title.addEventListener('click', handleClick);
