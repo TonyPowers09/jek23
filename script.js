@@ -9,7 +9,7 @@ const changeColor = () => {
 
 const handleClick = (event) => {
   event.preventDefault();
-  window.open('https://pdfz.s3.us-west-1.amazonaws.com/meany.gif', '_blank');
+  window.open('https://media.giphy.com/media/tBxyh2hbwMiqc/giphy.gif', '_blank');
 };
 
 title.addEventListener('click', handleClick);
