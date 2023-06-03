@@ -7,11 +7,6 @@ const changeColor = () => {
   currentIndex = (currentIndex + 1) % colors.length;
 };
 
-const handleClick = (event) => {
-  event.preventDefault();
-  window.open('https://media.giphy.com/media/tBxyh2hbwMiqc/giphy.gif', '_blank');
-};
-
 title.addEventListener('click', handleClick);
 setInterval(changeColor, 1000);
 
